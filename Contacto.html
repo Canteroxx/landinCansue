@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Diseño.css">
+	<title>Contacto</title>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="fotos/Logo.png" alt="">
+		</div>
+		<nav class="barra">
+		   <a href="Inicio.html">Inicio</a>
+		   <a href="Nosotros.html">Nosotros</a>
+		   <a href="Contacto.html">Contacto</a>
+		   <a href="InicioSesion.html">Iniciar Sesion</a>
+		</nav>
+	</header>
+	<div class="info">
+		<div class="info2"> 
+			<h5>¿Como comunicarnos?</h5>
+			<h1 class="futuro">Te dejamos nuestros contactos</h1>
+		</div>
+		<div class="info3">
+			<br><br><hr>
+			<div>Nuestros Contactos</div><hr>
+			<div class="info4">
+			  <ul class="lista">
+				<li>
+				  Discord <br>
+				  <a target="_blank" href="https://discord.gg/6qBTuEFN">
+					<img src="fotos/Discord.png" alt="foto1">
+				  </a>
+				</li>
+				<li>
+				  Facebook<br>
+				  <a target="_blank" href="https://web.facebook.com/Canteroxx/">
+					<img src="fotos/Facebook.png" alt="">
+				  </a>
+				</li>
+				<li>
+				  Twitter<br>
+				  <a target="_blank" href="https://twitter.com/Canteroxx1">
+					<img src="fotos/Twitter.png" alt="">
+				  </a>
+				</li>
+				<li>
+				  Instagram<br>
+				  <a target="_blank" href="https://www.instagram.com/canteroxx/">
+					<img src="fotos/Instagram.png" alt="">
+				  </a>
+				</li>
+				<li>
+				  Telefono<br>
+				  <img src="fotos/Telefono.png" onmouseover="mostrarTexto('texto2')" alt="foto2" 
+				  onmouseout="ocultarTexto('texto2')" onclick="mostrarOcultarTexto('texto2')">
+				  <p id="texto2" class="texto">963028619 o 931288128</p>
+				</li>
+				<li>
+				  WhatsApp<br>
+				  <img src="fotos/Wsp.png" onmouseover="mostrarTexto('texto1')" alt="foto1" 
+				  onmouseout="ocultarTexto('texto1')" onclick="mostrarOcultarTexto('texto1')">
+				  <p id="texto1" class="texto">+56963028619 o +569931288128</p>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		  
+	</div>
+	<script>// JavaScript para mostrar/ocultar texto
+        var textosVisibles = {
+            'texto1': false,
+            'texto2': false
+        };
+
+        function mostrarTexto(idTexto) {
+          if (!textosVisibles[idTexto]) {
+            document.getElementById(idTexto).style.display = "block";
+          }
+        }
+
+        function ocultarTexto(idTexto) {
+          if (!textosVisibles[idTexto]) {
+            document.getElementById(idTexto).style.display = "none";
+          }
+        }
+
+        function mostrarOcultarTexto(idTexto) {
+          textosVisibles[idTexto] = !textosVisibles[idTexto];
+          var texto = document.getElementById(idTexto);
+          texto.style.display = textosVisibles[idTexto] ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
