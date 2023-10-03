@@ -6,92 +6,63 @@
     <script src="https://cdn.tailwindcss.com"></script>
 	<title>Contacto</title>
 </head>
-<body>
-	<header>
-		<div class="logo">
-			<img src="fotos/Logo.png" alt="">
+<body class="h-screen bg-slate-600">
+    <header class="flex flex-row justify-between mx-8 text-white">
+		<div class="flex flex-row items-center gap-2">
+		  <svg
+			class="w-16 h-16"
+			xmlns="http://www.w3.org/2000/svg"
+			class="icon icon-tabler icon-tabler-device-gamepad-2"
+			width="96"
+			height="96"
+			viewBox="0 0 24 24"
+			stroke-width="2"
+			stroke="currentColor"
+			fill="none"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		  >
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+			<path
+			  d="M12 5h3.5a5 5 0 0 1 0 10h-5.5l-4.015 4.227a2.3 2.3 0 0 1 -3.923 -2.035l1.634 -8.173a5 5 0 0 1 4.904 -4.019h3.4z"
+			></path>
+			<path
+			  d="M14 15l4.07 4.284a2.3 2.3 0 0 0 3.925 -2.023l-1.6 -8.232"
+			></path>
+			<path d="M8 9v2"></path>
+			<path d="M7 10h2"></path>
+			<path d="M14 10h2"></path>
+		  </svg>
+		  <h1 class="text-3xl">Cansue</h1>
 		</div>
-		<nav class="barra">
-		   <a href="../index.html">Inicio</a>
-		   <a href="Nosotros.html">Nosotros</a>
-		   <a href="Contacto.html">Contacto</a>
-		   <a href="InicioSesion.html">Iniciar Sesion</a>
+		<nav class="flex items-center">
+		  <ul class="[&>li>a]: flex flex-row gap-4">
+			<li><a class="hover:bg-slate-200 p-3 rounded hover:text-black" href="../index.html">Inicio</a></li>
+			<li><a class="hover:bg-slate-200 p-3 rounded hover:text-black" href="Nosotros.html">Nosotros</a></li>
+			<li><a class="hover:bg-slate-200 p-3 rounded hover:text-black" href="Contacto.html">Contacto</a></li>
+			<li><a class="hover:bg-slate-200 p-3 rounded hover:text-black" href="InicioSesion.html">Iniciar Sesion</a></li>
+		  </ul>
 		</nav>
-	</header>
-	<div class="info">
-		<div class="info2"> 
-			<h5>¿Como comunicarnos?</h5>
-			<h1 class="futuro">Te dejamos nuestros contactos</h1>
-		</div>
-		<div class="info3">
-			<br><br><hr>
-			<div>Nuestros Contactos</div><hr>
-			<div class="info4">
-			  <ul class="lista">
-				<li>
-				  Discord <br>
-				  <a target="_blank" href="https://discord.gg/6qBTuEFN">
-					<img src="fotos/Discord.png" alt="foto1">
-				  </a>
-				</li>
-				<li>
-				  Facebook<br>
-				  <a target="_blank" href="https://web.facebook.com/Canteroxx/">
-					<img src="fotos/Facebook.png" alt="">
-				  </a>
-				</li>
-				<li>
-				  Twitter<br>
-				  <a target="_blank" href="https://twitter.com/Canteroxx1">
-					<img src="fotos/Twitter.png" alt="">
-				  </a>
-				</li>
-				<li>
-				  Instagram<br>
-				  <a target="_blank" href="https://www.instagram.com/canteroxx/">
-					<img src="fotos/Instagram.png" alt="">
-				  </a>
-				</li>
-				<li>
-				  Telefono<br>
-				  <img src="fotos/Telefono.png" onmouseover="mostrarTexto('texto2')" alt="foto2" 
-				  onmouseout="ocultarTexto('texto2')" onclick="mostrarOcultarTexto('texto2')">
-				  <p id="texto2" class="texto">963028619 o 931288128</p>
-				</li>
-				<li>
-				  WhatsApp<br>
-				  <img src="fotos/Wsp.png" onmouseover="mostrarTexto('texto1')" alt="foto1" 
-				  onmouseout="ocultarTexto('texto1')" onclick="mostrarOcultarTexto('texto1')">
-				  <p id="texto1" class="texto">+56963028619 o +569931288128</p>
-				</li>
-			  </ul>
-			</div>
-		  </div>
-		  
-	</div>
-	<script>// JavaScript para mostrar/ocultar texto
-        var textosVisibles = {
-            'texto1': false,
-            'texto2': false
-        };
-
-        function mostrarTexto(idTexto) {
-          if (!textosVisibles[idTexto]) {
-            document.getElementById(idTexto).style.display = "block";
-          }
-        }
-
-        function ocultarTexto(idTexto) {
-          if (!textosVisibles[idTexto]) {
-            document.getElementById(idTexto).style.display = "none";
-          }
-        }
-
-        function mostrarOcultarTexto(idTexto) {
-          textosVisibles[idTexto] = !textosVisibles[idTexto];
-          var texto = document.getElementById(idTexto);
-          texto.style.display = textosVisibles[idTexto] ? "block" : "none";
-        }
-    </script>
+	  </header>
+	  <h1 class="text-4xl text-center text-white">Contactanos!</h1>
+	<form action="" class="flex flex-col mt-8 p-4 gap-4 text-white w-7/12 mx-auto bg-slate-500 rounded-md">
+		Nombre
+		<input type="name"
+		class="bg-gray-900 p-1"
+		placeholder="Javiera"
+		>
+		Correo
+		<input type="email" class="bg-gray-900 p-1"
+		placeholder="vuelve@gmail.com"
+		>
+		Deja tu Mensaje:
+		<textarea name="msg" rows="6"
+		class="bg-gray-900 p-1" 
+		placeholder="porfavor"
+		></textarea>
+		<input type="submit" value="Enviar"
+		class="p-1 bg-blue-900 hover:cursor-pointer" 
+		>
+	</form>
 </body>
 </html>

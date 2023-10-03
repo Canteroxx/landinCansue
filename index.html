@@ -6,8 +6,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Cansue</title>
   </head>
-  <body class="bg-blue-900 text-white h-screen w-screen">
-    <header class="flex flex-row justify-between mx-8">
+  <body class="text-white h-screen w-screen bg-blue-950">
+    <header class="flex flex-row justify-between mx-8" class="">
       <div class="flex flex-row items-center gap-2">
         <svg
           class="w-16 h-16"
@@ -36,66 +36,91 @@
         <h1 class="text-3xl">Cansue</h1>
       </div>
       <nav class="flex items-center">
-        <ul class="[&>li>a]: flex flex-row gap-4">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/Nosotros.html">Nosotros</a></li>
-          <li><a href="pages/Contacto.html">Contacto</a></li>
-          <li><a href="pages/InicioSesion.html">Iniciar Sesion</a></li>
+        <ul class="[&>li>a]:hover:cursor-pointer flex flex-row gap-4">
+          <li>
+            <a class="hover:bg-slate-200 p-3 rounded" href="index.html"
+              >Inicio</a>
+          </li>
+          <li>
+            <a class="hover:bg-slate-200 p-3 rounded" href="pages/Nosotros.html"
+              >Nosotros</a>
+          </li>
+          <li>
+            <a href="pages/games.html">
+              Juegos
+            </a>
+          </li>
+          <li>
+            <a class="hover:bg-slate-200 p-3 rounded" href="pages/Contacto.html"
+              >Contacto</a>
+          </li>
+          <li>
+            <a
+              class="hover:bg-slate-200 p-3 rounded"
+              href="pages/InicioSesion.html"
+              >Iniciar Sesion</a>
+          </li>
         </ul>
       </nav>
     </header>
     <h1 class="text-3xl text-center py-3 my-4">Nuestros Juegos</h1>
-    <hr />
     <div class="max-w-2xl mx-auto my-10">
       <div id="default-carousel" class="relative" data-carousel="static">
         <div
-          class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96"
-        >
+          class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <div class="flex flex-row items-center bg-gray-800 p-4 rounded absolute w-full h-full px-24">
-                    <img src="fotos/OnePiece.png"
-                    class="h-64 w-40 rounded-t object-cover" 
-                    alt="Imagen de One Piece">
-                    <div class="flex flex-col mx-auto ">
-                    <h1 class="text-2xl">One Piece</h1>
-                    <p>Historia de One piece</p>
-                    </div>
-                </div>
+            <div
+              class="flex flex-row items-center bg-gray-800 p-4 rounded absolute w-full h-full px-24">
+              <img
+                src="fotos/OnePiece.png"
+                class="h-64 w-40 rounded-t object-cover"
+                alt="Imagen de One Piece"/>
+              <div class="flex flex-col mx-auto">
+                <h1 class="text-2xl">One Piece</h1>
+                <p>Historia de One piece</p>
+              </div>
+            </div>
           </div>
 
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div class="flex flex-row items-center bg-gray-800 p-4 rounded absolute w-full h-full px-24">
-                <img src="fotos/OnePiece.png"
-                class="h-64 w-40 rounded-t object-cover" 
-                alt="Imagen de One Piece">
-                <div class="flex flex-col mx-auto ">
+            <div
+              class="flex flex-row items-center bg-gray-800 p-4 rounded absolute w-full h-full px-24">
+              <img
+                src="fotos/OnePiece.png"
+                class="h-64 w-40 rounded-t object-cover"
+                alt="Imagen de One Piece"/>
+              <div class="flex flex-col mx-auto">
                 <h1 class="text-2xl">One Piece</h1>
                 <p>Historia de One piece</p>
-                </div>
+              </div>
             </div>
-      </div>
+          </div>
 
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-              alt="..."
-            />
+            <div
+              class="flex flex-row items-center bg-gray-800 p-4 rounded absolute w-full h-full px-24">
+              <img
+                src="fotos/OnePiece.png"
+                class="h-64 w-40 rounded-t object-cover"
+                alt="Imagen de One Piece"/>
+              <div class="flex flex-col mx-auto">
+                <h1 class="text-2xl">One Piece</h1>
+                <p>Historia de One piece</p>
+              </div>
+            </div>
           </div>
         </div>
         <button
           type="button"
           class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-        <img src="img/arrow-left.svg" alt="">
+          data-carousel-prev>
+          <img src="img/arrow-left.svg" alt="" />
         </button>
         <button
           type="button"
           class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-        <img src="img/arrow-right.svg">
+          data-carousel-next>
+          <img src="img/arrow-right.svg"/>
         </button>
       </div>
     </div>
