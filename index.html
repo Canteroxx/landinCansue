@@ -38,25 +38,27 @@
       <nav class="flex items-center">
         <ul class="[&>li>a]:hover:cursor-pointer flex flex-row gap-4">
           <li>
-            <a class="hover:bg-slate-200 p-3 rounded" href="index.html"
+            <a class="hover:bg-slate-200 p-3 rounded hover:text-black" href="index.html"
               >Inicio</a>
           </li>
           <li>
-            <a class="hover:bg-slate-200 p-3 rounded" href="pages/Nosotros.html"
+            <a class="hover:bg-slate-200 p-3 rounded hover:text-black" href="pages/Nosotros.html"
               >Nosotros</a>
           </li>
           <li>
-            <a href="pages/games.html">
+            <a 
+            class="hover:bg-slate-200 p-3 rounded hover:text-black"
+            href="pages/games.html">
               Juegos
             </a>
           </li>
           <li>
-            <a class="hover:bg-slate-200 p-3 rounded" href="pages/Contacto.html"
+            <a class="hover:bg-slate-200 p-3 rounded hover:text-black" href="pages/Contacto.html"
               >Contacto</a>
           </li>
           <li>
             <a
-              class="hover:bg-slate-200 p-3 rounded"
+              class="hover:bg-slate-200 p-3 rounded hover:text-black"
               href="pages/InicioSesion.html"
               >Iniciar Sesion</a>
           </li>
@@ -110,6 +112,13 @@
             </div>
           </div>
         </div>
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      </div>
         <button
           type="button"
           class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
