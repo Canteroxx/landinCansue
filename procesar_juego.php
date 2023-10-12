@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $imgNombre = $_FILES['imagen']['name'];
     $imgTemp = $_FILES['imagen']['tmp_name'];
-    $ruta = "../fotos/";
+    $ruta = "fotos/";
     $imgRuta = $ruta . $imgNombre;
 
     if (move_uploaded_file($imgTemp, $imgRuta)) {
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $conn->prepare($query);
 
         if ($stmt) {
-            $stmt->bind_param("sddss", $nombre, $categoria, $descripcion, $imgRuta);
+            $stmt->bind_param("ssss", $nombre, $categoria, $descripcion, $imgRuta);
 
             if ($stmt->execute()) {
                 echo "Juego agregado con éxito.";
