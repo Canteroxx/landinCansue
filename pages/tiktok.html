@@ -4,67 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../tiktok.css">
 </head>
-<style>
-    :root{--img: url(../img/ej.jpg);}
-    .container{
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
-        width: 800px;
-        height: 500px;
-        transition: all 400ms;
-    }
-    .box{
-        position: relative;
-        background: var(--img);
-        background-size: cover;
-        transition: all 400ms;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .box::after{
-        content: attr(data-text);
-        position: absolute;
-        bottom:20px;
-        background: #000;
-        color: #fff;
-        padding: 10px 10px 10px 14px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        transform: translateY(60px);
-        opacity: 0;
-        transition: all 400ms;
-    }
-    .container:hover .box{
-        filter: grayscale(100%) opacity(24%);
-    }
-    .box:hover::after{
-        transform: translateY(0);
-        opacity: 1;
-        transition-delay: 400ms;
-
-    }
-    .container .box:hover{
-        filter: grayscale(0%) opacity(100%);
-    }
-    .container:has(.box-1:hover){
-        grid-template-columns: 3fr 1fr 1fr;
-    }
-    .container:has(.box-1:hover){
-        grid-template-columns: 1fr 3fr 1fr;
-    }.container:has(.box-1:hover){
-        grid-template-columns: 1fr 1fr 3fr;
-    }
-    .box:nth-child(odd){
-        transform: translateY(-16px)
-    }
-    .box:nth-child(even){
-        transform: translateY(16px)
-    }
-</style>
 <body>
     <div class="container">
         <div class="box box1" data-text="Renji">
