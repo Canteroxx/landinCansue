@@ -15,18 +15,21 @@
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
     <script>
       tailwind.config = {
-        darkMode: "class",
-        theme: {},
-        corePlugins: {
-          preflight: false,
-        },
+      theme: {
+          fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+    },
+      corePlugins: {
+        preflight: false,
+      },
       };
     </script>
-  </head>
-  <body>
+    </head>
+    <body class="font-inter bg-gray-900">
     <header>
       <nav
-        class="relative flex w-full flex-wrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 lg:py-4"
+        class="relative flex w-full flex-wrap items-center justify-between py-2 text-neutral-500 shadow-lg hover:text-neutral-700 lg:py-4"
         data-te-navbar-ref
       >
         <div class="flex w-full flex-wrap items-center justify-between px-3">
@@ -37,7 +40,7 @@
             >
               <img
                 class="mr-2"
-                src="./img/logo.svg"
+                src="./img/logo-white.svg"
                 alt="logo"
                 loading="lazy"
               />
@@ -57,7 +60,7 @@
                 data-te-nav-item-ref
               >
                 <a
-                  class="text-neutral-500 hover:text-neutral-800"
+                  class="text-neutral-200 hover:border-b-2 p-2 text-xl"
                   aria-current="page"
                   href="#"
                   data-te-nav-link-ref
@@ -68,48 +71,34 @@
             <div class="flex items-center">
               <a
                 href="pages/games.html"
-                data-te-ripple-init
-                data-te-ripple-color="light"
-                class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-slate-600 transition duration-150 ease-in-out hover:bg-slate-800  hover:text-slate-100 motion-reduce:transition-none"
+                class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-slate-300 transition duration-150 ease-in-out   hover:text-slate-800 hover:bg-slate-50  motion-reduce:transition-none"
               >
                 Juegos
               </a>
               <a
-                href="pages/contact.html"
-                data-te-ripple-init
-                data-te-ripple-color="light"
-                class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-slate-600 transition duration-150 ease-in-out hover:bg-slate-800  hover:text-slate-100 motion-reduce:transition-none"
-              >
-                Contacto
-              </a>
-              <a
-                href="pages/us.html"
-                data-te-ripple-init
-                data-te-ripple-color="light"
-                class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-slate-600 transition duration-150 ease-in-out hover:bg-slate-800  hover:text-slate-100 motion-reduce:transition-none"
-              >
-                Quienes Somos
-              </a>
-              <a href="pages/InicioSesion.html">
-                <button
-                type="button"
-                data-te-ripple-init
-                data-te-ripple-color="light"
-                class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out 
-                bg-slate-500
-                hover:bg-slate-800
-                "
-              >
-                Inicia Sesion
-              </button>
-              </a>
+              href="pages/contact.html"
+              class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-slate-300 transition duration-150 ease-in-out   hover:text-slate-800 hover:bg-slate-50  motion-reduce:transition-none"
+            >
+              Contacto
+            </a>
+            <a
+            href="pages/us.html"
+            class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-slate-300 transition duration-150 ease-in-out   hover:text-slate-800 hover:bg-slate-50  motion-reduce:transition-none"
+          >
+            Quienes Somos
+          </a>
+          <a
+          href="pages/InicioSesion.html"
+          class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-slate-700 transition duration-150 ease-in-out  motion-reduce:transition-none bg-slate-50 hover:bg-dark hover:text-white hover:border"
+        >
+          Inicia Sesion
+        </a>
               <a
                 href="https://github.com/Canteroxx/landinCansue"
                 target="_blank"
                 data-te-ripple-init
                 data-te-ripple-color="light"
                 class="mr-3 inline-block rounded px-3 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg motion-reduce:transition-none"
-                style="background-color: #333"
               >
                 <!-- GitHub -->
                 <svg
@@ -144,9 +133,9 @@
           <div class="flex h-full items-center justify-center">
             <div class="px-6 text-center text-white md:px-12">
               <h1
-                class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl"
+                class="mt-2 mb-16 text-5xl font-extralight tracking-wide md:text-6xl xl:text-7xl"
               >
-                Somos el futuro <br /><span>de la entretencion</span>
+                Somos el futuro <br /><span>de la entretención</span>
               </h1>
               <a
                 class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out
