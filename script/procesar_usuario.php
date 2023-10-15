@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bind_param("sss", $usuario, $correo, $contrasena);
 
             if ($stmt->execute()) {
-                header("Location: index.html");
+                header("Location: ../index.html");
                 exit();
             } else {
                 echo "Error al registrar el usuario: " . $stmt->error;
@@ -31,6 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $conn->close();
 } else {
-    header("Location: ../pages/login.html");
+    header("Location: InicioSesion.html");
     exit();
 }
