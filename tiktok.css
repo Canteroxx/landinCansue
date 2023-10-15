@@ -2,22 +2,26 @@
     --img1: url(fotos/OnePiece.png);
     --img2: url(fotos/BlueLock.png);
     --img3: url(fotos/jujutsu.png);
+    --img4: url(fotos/SoloLeveling.png);
+    --img5: url(fotos/NGNL.png);
 }
 .container{
     margin: 100px 0px 20px 0px;
     position: relative;
+    padding: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1em;
     width: 800px;
     height: 500px;
-    transition: all 200ms;
+    transition: all 150ms;
 }
 .box{
     position: relative;
     background: var(--img);
-    background-size: cover;
-    transition: all 400ms;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 200ms;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,12 +67,16 @@
 }
 .box1 {
     background-image: var(--img1);
-  }
-  
-  .box2 {
+}
+.box2 {
     background-image: var(--img2);
-  }
-  
-  .box3 {
+}
+.box3 {
     background-image: var(--img3);
+}
+.box4 {
+    background-image: var(--img4);
+}
+.box5 {
+    background-image: var(--img5);
   }
