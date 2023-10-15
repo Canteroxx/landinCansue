@@ -152,23 +152,24 @@
       </div>
     </section>
     <div class="container mx-auto md:px-6">
-      <section class="mb-32">
+      <section class="">
         <style>
           .zoom:hover img {
             transform: scale(1.1);
           }
         </style>
-        <div class="grid gap-6 lg:grid-cols-3">
+        <h1 class="text-3xl text-white my-2">Nuestros productos mas vendidos:</h1>
+        <div class="grid gap-6 lg:grid-cols-3 h-[200px]">
           <div
-            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg "
+            id="op-card"
+            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
             data-te-ripple-init
             data-te-ripple-color="dark"
           >
             <img
-              src="./img/op/square.webp"
+              src="./img/op/horizontal.jpeg"
               class="w-full align-middle transition duration-300 ease-linear"
             />
-            <a href="#!">
               <div
                 class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
               >
@@ -181,19 +182,18 @@
                   class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"
                 ></div>
               </div>
-            </a>
           </div>
 
           <div
-            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg"
+            id="ao-card"
+            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
             data-te-ripple-init
             data-te-ripple-color="dark"
           >
             <img
-              src="./img/ao/square.jpg"
+              src="./img/ao/horizontal.webp"
               class="w-full align-middle transition duration-300 ease-linear"
             />
-            <a href="#!">
               <div
                 class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
               >
@@ -206,19 +206,18 @@
                   class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"
                 ></div>
               </div>
-            </a>
           </div>
 
           <div
-            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg "
+            id="sl-card"
+            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
             data-te-ripple-init
             data-te-ripple-color="dark"
           >
             <img
-              src="https://mdbcdn.b-cdn.net/img/new/standard/city/045.jpg"
+              src="img/soloL/horizontal.avif"
               class="w-full align-middle transition duration-300 ease-linear"
             />
-            <a href="#!">
               <div
                 class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
               >
@@ -231,10 +230,18 @@
                   class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"
                 ></div>
               </div>
-            </a>
           </div>
         </div>
+        <div id="infoModal" class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 hidden items-center justify-center">
+          <div class="bg-white rounded-lg p-8 max-w-md w-full">
+              <h2 id="modalTitle" class="text-xl font-bold mb-4"></h2>
+              <p id="modalDescription"></p>
+              <a href="#" id="modalLink" class="block mt-4 text-blue-500 hover:underline">Ver más</a>
+              <button id="closeModal" class="mt-4 px-4 py-2 bg-slate-800 text-white rounded hover:bg-slate-950">Cerrar</button>
+          </div>
+      </div>
       </section>
     </div>
+    <script src="./script/index.js"></script>
   </body>
 </html>
