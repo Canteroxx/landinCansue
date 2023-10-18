@@ -4,6 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juegos</title>
+    <style>
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      article {
+        margin: 20px;
+        position: relative;
+        width: 250px;
+        transition: all 0.3s ease;
+      }
+    
+      article img:first-child {
+        box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+        border-radius: 10px;
+        object-fit: cover;
+        width: 250px;
+        height: 400px;
+      }
+    
+      article img:last-child {
+        position: absolute;
+        width: 250px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(25%);
+        transition: 0.3s ease;
+        opacity: 0;
+      }
+    
+      article:hover {
+        transform: rotateX(4deg) translateY(-5%) translateZ(0);
+      }
+    
+      article::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+          to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95%
+        );
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+    
+      article:hover::before {
+        opacity: 1;
+      }
+    
+      article:hover img:last-child {
+        opacity: 1;
+        transform: translateY(10%);
+      }
+    </style>
+    
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
@@ -116,8 +176,31 @@
         </div>
       </nav>
     </header>
-    <div>
-      <h1 class="text-white">Texto</h1>
+    <div class="image-container">
+      <article>
+        <img src="../img/op/vertical.jpg" alt="">
+        <a href="../pages/games/OnePiece.html">
+          <img src="../img/op/luffy.png" alt="">
+        </a>
+      </article>
+      <article>
+        <img src="../img/ao/vertical.jpg" alt="">
+        <a href="../pages/games/AoiAshi.html">
+          <img src="../img/ao/aoi.jpg" alt="">
+        </a>
+      </article>
+      <article>
+        <img src="../img/jk/jujutsu.png" alt="">
+        <a href="../pages/games/JujutsuKaisen.html">
+          <img src="../img/jk/itadori.png" alt="">
+        </a>
+      </article>
+      <article>
+        <img src="../img/soloL/vertical.png" alt="">
+        <a href="../pages/games/SoloLeveling.html">
+          <img src="../img/soloL/Sung.png" alt="">
+        </a>
+      </article>
     </div>
   </body>
 </html>
