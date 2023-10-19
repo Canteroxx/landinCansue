@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | SoftCodEPM</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
     crossorigin="anonymous">
@@ -23,7 +23,6 @@
                         <br>
                         <br>
                         <br>
-                   <!--<center> <img class="img-thumbnail" src="../../img/logo.png" width="100"></center>-->
                    <br>
                    <h2 class="text-center">¡BIENVENIDO!</h2>
                                     <h3 class="text-center">Iniciar Sesión</h3>
@@ -41,13 +40,10 @@
                             </div>
                             <div class="form-group">
                              <br>
-                    <center>
                                 <button type="submit"class="btn btn-primary btn-block"> Ingresar <i class="fa fa-check-circle" aria-hidden="true"></i></button> 
                                 <br>
                                 <br>
                                 <a href="Registro.php" data-toggle="modal" data-target="#user"> ¿Aun no tienes cuenta? Presiona Aqui</a>
-                                </center>
-                      
                         </form>
                     </div>
                 </div>

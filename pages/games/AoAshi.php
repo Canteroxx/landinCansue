@@ -88,7 +88,7 @@
             Quienes Somos
           </a>
           <a
-          href="../InicioSesion.html"
+          href="../InicioSesion.php"
           class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-slate-700 transition duration-150 ease-in-out  motion-reduce:transition-none bg-slate-50 hover:bg-dark hover:text-white hover:border"
         >
           Inicia Sesion

@@ -31,7 +31,7 @@ document.getElementById("ao-card").addEventListener("click", function () {
   mostrarModal(
     "Ao Ashi",
     "Descripción de Ao Ashi...",
-    "../pages/games/AoiAshi.html"
+    "pages/games/AoAshi.php"
   );
 });
 
@@ -42,7 +42,7 @@ document.getElementById("sl-card").addEventListener("click", function () {
   mostrarModal(
     "Solo Leveling",
     "Descripción de Solo Leveling...",
-    "/ruta-a-pagina-de-solo-leveling"
+    "pages/games/SoloLeveling.php"
   );
 });
 

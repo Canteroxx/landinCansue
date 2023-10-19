@@ -1,11 +1,4 @@
-<?php 
-
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "cansue";
-
-$conn = new mysqli($host,$user,$pass,$db);
-$conn->set_charset('utf8_spanish2_ci');
-
+<?php
+   $conexion = mysqli_connect("localhost","root","","cansue");
+   $conexion->set_charset('utf8');
 ?>

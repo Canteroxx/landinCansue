@@ -1,5 +1,5 @@
 <?php
-require_once ("../includes/db.php");
+require_once ("db.php");
 $record_set = array();
 $sql = "SELECT * FROM comentarios ORDER BY id ASC";
 $result = $conexion->query($sql);
