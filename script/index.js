@@ -26,7 +26,7 @@
         mostrarModal(
             'Ao Ashi', 
             'Descripción de Ao Ashi...', 
-            'pages/games/AoAshi.html'
+            '../pages/games/AoiAshi.html'
         );
     });
 
