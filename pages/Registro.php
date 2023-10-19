@@ -30,8 +30,8 @@
 	<section>
 		<div class="form-box">
 			<div class="form-value">
-				<form action="../script/procesar_usuario.php" method="post" enctype="multipart/form-data">   
 					<h2>Register</h2>
+					<form  action="../php/functions.php" method="POST">
 					<div class="inputbox">
 						<ion-icon name="mail-outline"></ion-icon>
 						<input type="text" name="Nombre" required>
@@ -47,11 +47,11 @@
 						<input type="password" name="Contraseña" required>
 						<label id="Contraseña">Contraseña</label>
 					</div>
-					<a href="../index.html">
+					<a href="">
 						<button>Registrarte</button>
 					  </a>
 					<div class="register">
-						<p>Ya tengo una cuenta <a href="InicioSesion.html">Iniciar Sesion</a></p> 
+						<p>Ya tengo una cuenta <a href="InicioSesion.php">Iniciar Sesion</a></p> 
 					</div>
 				</form>
 			</div>
