@@ -1,9 +1,12 @@
+//Componentes del modal
 const modal = document.getElementById("infoModal");
 const modalTitle = document.getElementById("modalTitle");
 const modalDescription = document.getElementById("modalDescription");
 const modalLink = document.getElementById("modalLink");
 const closeModal = document.getElementById("closeModal");
 
+//Funcion para mostrar modal
+// +1 Funcion con 2 argumentos
 function mostrarModal(titulo, descripcion, enlace) {
   modalTitle.textContent = titulo;
   modalDescription.textContent = descripcion;
@@ -11,15 +14,18 @@ function mostrarModal(titulo, descripcion, enlace) {
   modal.classList.remove("hidden");
 }
 
+//Tarjeta de One Piece
+// +1 Evento manejado
 document.getElementById("op-card").addEventListener("click", function () {
   modal.classList.add("flex");
   mostrarModal(
     "One Piece",
     "Descripción de One Piece...",
-    "pages/games/OnePiece.html"
+    "pages/games/OnePiece.php"
   );
 });
 
+//Tarjeta de Ao Ashi
 document.getElementById("ao-card").addEventListener("click", function () {
   modal.classList.add("flex");
   mostrarModal(
@@ -29,6 +35,8 @@ document.getElementById("ao-card").addEventListener("click", function () {
   );
 });
 
+
+//Tarjeta de Solo Leveling
 document.getElementById("sl-card").addEventListener("click", function () {
   modal.classList.add("flex");
   mostrarModal(
@@ -38,17 +46,22 @@ document.getElementById("sl-card").addEventListener("click", function () {
   );
 });
 
+//Cerrar Modales
 closeModal.addEventListener("click", function () {
   modal.classList.add("hidden");
 });
 
+
+// Mostrar "Ver mas al hacer hover en las tarjetas"
 const cards = document.querySelectorAll('.card');
 
+// Recorrer cada tarjeta y aplicar la funcion "viewMore" pasandole la tarjeta que corresponde
 cards.forEach(card => {
+  // +1 Evento manejado
   card.addEventListener('mouseenter', function() {
     viewMore(card);
   });
-
+  // +1 Evento manejado
   card.addEventListener('mouseleave', function() {
     card.style.backgroundColor = "";
     const viewMoreText = card.querySelector('.view-more');
@@ -58,6 +71,8 @@ cards.forEach(card => {
   });
 });
 
+// Funcion para mostrar "Ver mas" en cada tarjeta
+// +1 Funcion
 function viewMore(card) {
     const viewMoreText = document.createElement('span');
     viewMoreText.textContent = "Ver más";
