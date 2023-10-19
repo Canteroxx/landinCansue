@@ -1,43 +1,28 @@
-<?php
-session_start();
+<?php 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include 'bd.php';
+class User extends DB{
+ 
+    private $nombre;
+    private $username;
+    public function userExists($user, $pass){
 
-    $correo = isset($_POST['correo']) ? $_POST['correo'] : null;
-    $contrasena = isset($_POST['contrasena']) ? $_POST['contrasena'] : null;
+        $md5pass = md5($pass);
 
-    if ($correo && $contrasena) {
-        $query = "SELECT Nombre FROM usuarios WHERE Correo = ? AND Contraseña = ?";
-        $stmt = $conn->prepare($query);
+        $query = $this->connect()->prepare('SELECT * FROM usuarios WHERE Nombre = :user AND Contraseña = :pass');
+        $query->execute('user' => $user,'pass'-> $md5pass);
 
-        if ($stmt) {
-            $stmt->bind_param("ss", $correo, $contrasena);
-            $stmt->execute();
-            $stmt->store_result();
-
-            if ($stmt->num_rows > 0) {
-                $stmt->bind_result($usuario_id, $usuario_nombre);
-                $stmt->fetch();
-                $_SESSION['usuario_id'] = $usuario_id;
-                $_SESSION['usuario_nombre'] = $usuario_nombre;
-                header("Location: pagina_de_bienvenida.php");
-                exit();
-            } else {
-                echo "Credenciales incorrectas. Intenta de nuevo.";
-            }
-
-            $stmt->close();
-        } else {
-            echo "Error en la preparación de la consulta: " . $conn->error;
+        if ($query->rowCount()){
+            return true;
+        }else{
+            return false;
         }
-    } else {
-        echo "Por favor, complete todos los campos del formulario.";
     }
 
-    $conn->close();
-} else {
-    header("Location: InicioSesion.html");
-    exit();
+    public function setUser($user){
+        
+    }
+
 }
+
+
 ?>

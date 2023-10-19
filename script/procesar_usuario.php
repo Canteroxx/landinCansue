@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include 'bd.php';
+    include 'db.php';
 
     $usuario = isset($_POST['Nombre']) ? $_POST['Nombre'] : null;
     $correo = isset($_POST['Correo']) ? $_POST['Correo'] : null;
