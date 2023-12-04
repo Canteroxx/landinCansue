@@ -116,7 +116,7 @@
         <div class="h-screen pl-40 flex flex-row pr-20">
             <div class="flex flex-col ml-10 gap-10">
               <h1 class="text-3xl pt-20">Agregar Comentario</h1>
-              <form action="/games/OnePiece" method="POST" class="flex flex-col text-white pb-2">
+              <form action="/games/AoAshi" method="POST" class="flex flex-col text-white pb-2">
                   @csrf
                   @auth
                   Nombre:

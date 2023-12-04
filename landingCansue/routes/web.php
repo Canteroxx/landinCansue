@@ -62,17 +62,62 @@ Route::get('/games/AoAshi', [CommentController::class, 'showAoAshi']);
 Route::get('/games/JujutsuKaisen', function () {
     return view('pages.games.jujutsukaisen');
 });
+Route::post('/games/JujutsuKaisen', [CommentController::class, 'comment']);
+
+Route::get('/games/JujutsuKaisen', [CommentController::class, 'showJujutsuKaisen']);
+
 Route::get('/games/SoloLeveling', function () {
     return view('pages.games.sololeveling');
 });
+Route::post('/games/SoloLeveling', [CommentController::class, 'comment']);
+
+Route::get('/games/SoloLeveling', [CommentController::class, 'showSoloLeveling']);
+
 Route::get('/games/Slime', function () {
     return view('pages.games.slime');
 });
+Route::post('/games/Slime', [CommentController::class, 'comment']);
+
+Route::get('/games/Slime', [CommentController::class, 'showSlime']);
+
 Route::get('/games/Haikyuuu', function () {
     return view('pages.games.haikyu');
 });
+Route::post('/games/Haikyuuu', [CommentController::class, 'comment']);
+
+Route::get('/games/Haikyuuu', [CommentController::class, 'showHaikyuuu']);
+
 Route::get('/games/FoodWars', function () {
     return view('pages.games.foodwars');
 });
+Route::post('/games/FoodWars', [CommentController::class, 'comment']);
 
+Route::get('/games/FoodWars', [CommentController::class, 'showFoodWars']);
 
+Route::get('/games/BlueLock', function () {
+    return view('pages.games.BlueLock');
+});
+Route::post('/games/BlueLock', [CommentController::class, 'comment']);
+
+Route::get('/games/BlueLock', [CommentController::class, 'showBlueLock']);
+
+Route::get('/games/KurokoNoBasquet', function () {
+    return view('pages.games.KurokoNoBasquet');
+});
+Route::post('/games/KurokoNoBasquet', [CommentController::class, 'comment']);
+
+Route::get('/games/KurokoNoBasquet', [CommentController::class, 'showKurokoNoBasquet']);
+
+Route::get('/games/TateNoYuusha', function () {
+    return view('pages.games.TateNoYuusha');
+});
+Route::post('/games/TateNoYuusha', [CommentController::class, 'comment']);
+
+Route::get('/games/TateNoYuusha', [CommentController::class, 'showTateNoYuusha']);
+
+Route::get('/games/Overlord', function () {
+    return view('pages.games.Overlord');
+});
+Route::post('/games/Overlord', [CommentController::class, 'comment']);
+
+Route::get('/games/Overlord', [CommentController::class, 'showOverlord']);

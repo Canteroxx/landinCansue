@@ -4,18 +4,18 @@
 <main 
 		  class="snap-y snap-mandatory relative w-full h-full overflow-y-auto overflow-x-hidden scroll-smooth text-slate-300">
 			<section class="snap-center h-screen">
-			  <div class="h-screen px-20 flex flex-row">
+			  <div class="h-screen px-20 flex flex-row items-center justify-center">
 				<!-- Tarjetas -->
-				<section class="mx-20 my-8">
-					<h2 class="mb-12 text-3xl font-bold text-gray-300">
+				<section class="mx-20 my-8 align">
+					<h2 class="mb-12 text-3xl font-bold text-gray-300 text-center">
 						Conoce al <u class="text-slate-100">equipo</u>
 					  </h2>
-					  <div class="grid gap-x-6 md:grid-cols-2 lg:gap-x-12 m-20">
+					  <div class="grid gap-x-6 lg:gap-x-12 m-20">
 						<!-- Tarjeta Joaco -->
 						<div class="mb-6 lg:mb-0">
 						  <div
 							class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-							<div class="relative overflow-hidden bg-cover bg-no-repeat">
+							<div class="relative overflow-hidden bg-cover bg-no-repeat ">
 								<img src="{{asset('img/team/pasterox.jpeg')}}" class="w-full rounded-t-lg" />
 							  <svg class="absolute text-white left-0 bottom-0" xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 1440 320">
@@ -51,29 +51,184 @@
 			  </div>
 			</section>
 			<!-- Info -->
-			<section class="snap-center h-screen">
+			<section class="nosotros snap-center h-screen">
 			<div class="h-screen p-20 pl-20 pr-20 pb-40 flex flex-row">
-					<img src="{{asset('img/ej.jpg')}}" alt="img" class="object-cover">
 					<article class="flex flex-col ml-10 gap-10">
-						<h1 class="text-3xl">¿Quienes Somos?</h1>
-						<h2 class="text-xl">Somos el futuro de la entretención</h2>
-						<p>Buscamos cambiar el mundo de los videojuegos. <br>Cansue se fundó en 2025 con la intención de desarrollar, publicar y apoyar el mundo de los videojuegos. En el año 2029 lanzamos oficialmente nuestro primer videojuego reconocido como <a href="../pages//games/AoiAshi.html" class="font-bold underline">Ao Ashi</a> el cual se va convirtiendo poco a poco en uno de los videojuegos más exitosos en la historia del Gaming.</p>
+						<hr><h1 class="text-3xl">¿Quienes Somos?</h1> <hr>
+						<p class="Nostros2">Cansue se fundo en 2025 con la intencion de desarrolla, publicar y apoyar el mundo
+					de los videojuegos. En el año 2029 Lanzamos oficialmente nuestro primer video juego reconocido como, 
+					<b>BlueLock</b> el cual se va conviertiendo poco a poco
+					en uno de los videojuegos más exitosos en la gistoria del Gaming. <br><br>
+					Con el poco tiempo desde que lanzamos <b>BLK</b>, intentamos cada dia hacer evolucionar el juego, al mismo
+					tiempo que ofrecemos nuevas experiencias a los jugadores, y no solo con <b>BLK</b> tambien trabajamos en	
+					otros videojuegos como <b>Ao Ashi</b>,  <b>One Piece</b>,  <b>Solo Leveling</b>, entre otros. <br><br>
+
+					La empresa <a class="Los" href="">Cansue</a> fue fundada por el estudiante de Ingenieria civil en informatica de la Universidad Catolica de Temuco
+					<i><b>Joaquin Cantero Olivera</b></i>  quien decidio aventurarse estudiando e investigando sobre el desarrollo de los videojuegos.
+					La empresa Cansue tiene más de 3000 empleados y más de 15 oficinas por todo el mundo, pero su oficina principal se ubica en Temuco, Provincia de Cautin.
+					Tras 5 años de su creacion estuvo incluida en numerosas listas como "100 mejores empresas para las que trabajar", "25 empresas para las que trabajar en el
+					sector tecnologico", "100 mejores lugares de trabajo para millenials" entre otras. 
+				</p>
 					</article>
 				</div>
 			</section>
-			<section class="snap-center h-screen">
+			<section class="nosotros snap-center h-screen">
 				<div class="h-screen p-20 pl-20 pr-20 pb-40 flex flex-row">
-					<img src="{{asset('img/team/espejo.jpeg')}}" alt="img" class="object-cover">
 					<article class="flex flex-col ml-10 gap-10">
-						<h1 class="text-3xl">Historia de Cansue</h1>
-						<p>La empresa Cansue tiene más de 3000 empleados, 5 oficinas repartidas por todo el mundo, pero su oficina principal se ubica en Temuco, Provincia de Cautín. Tras 5 años de su creación estuvo incluida en numerosas listas como </p> 
-						<ul class="list-disc ml-4">
-							<li>100 mejores empresas para las que trabajar</li>
-							<li>25 empresas para las que trabajar en el sector tecnológico</li>
-							<li>100 mejores lugares de trabajo para millenials</li>
-						</ul>entre otras.
+						<hr> <h1 class="text-3xl">Buscamos Alegrar vidas</h1> <hr>
+						<p class="Nostros2">Desde la creación del primer videojuego en 1952, la industria ha experimentado una evolución extraordinaria. Lo que comenzó como una forma de entretenimiento ha evolucionado hasta convertirse en una plataforma multifacética que va más allá de simplemente jugar.</p>
+						<p class="Nostros2">Los primeros videojuegos eran simples y directos, destinados principalmente a proporcionar entretenimiento y distracción. Se centraban en la competencia y la habilidad, ofreciendo una experiencia novedosa para los jugadores de la época. Pero 
+						con el tiempo, los desarrolladores comenzaron a explorar géneros que no solo desafiaban las habilidades del jugador, sino que también ofrecían experiencias relajantes. Juegos con entornos inmersivos, música tranquila y mecánicas relajantes se convirtieron en una opción para aquellos que buscaban escapar del estrés diario.
+						</p>
+						<p class="Nostros2">La narrativa en los videojuegos se volvió más compleja, permitiendo a los jugadores sumergirse en historias ricas en emociones. Algunos juegos se convirtieron en medios poderosos para que las personas expresaran y exploraran sus propias emociones. Desde la euforia de una victoria hasta la tristeza de una derrota, los videojuegos proporcionaron un espacio seguro para experimentar y procesar emociones.</p>
 					</article>
 				</div>
+			</section>
+			<section class="nosotros snap-center h-screen">
+			<div class="h-screen p-20 pl-40 pr-20 pb-40	items-center justify-center">
+			<h4><strong>Cantidad de registros de usuarios desde la publicacion del juego</strong></h4>
+			<p class="Nostros3">(Las X significan que en ese año el juego aún no salian)</p>
+			<table class="table">
+				<tr>
+					<th class="pl-10 pr-10">Juegos</th>
+					<th class="pl-2 pr-2">2029</th>
+					<th class="pl-2 pr-2">2030</th>
+					<th class="pl-2 pr-2">2031</th>
+					<th class="pl-2 pr-2">2032</th>
+					<th class="pl-2 pr-2">2033</th>
+					<th class="pl-2 pr-2">2034</th>
+					<th class="pl-2 pr-2">2035</th>
+					<th class="pl-2 pr-2">2036</th>
+					<th class="pl-2 pr-2">2037</th>
+					<th class="pl-2 pr-2">2038</th>
+					<th class="pl-2 pr-2">2039</th>
+					<th class="pl-2 pr-2">2040</th>
+				</tr>
+				<tr>
+					<td>Blue Lock</td>
+					<td>10M</td>
+					<td>15M</td>
+					<td>20M</td>
+					<td>25M</td>
+					<td>30M</td>
+					<td>40M</td>
+					<td>50M</td>
+					<td>60M</td>
+					<td>30M</td>
+					<td>80M</td>
+					<td>90M</td>
+					<td>100M</td>
+				</tr>
+				<tr>
+					<td>Solo Leveling</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>5M</td>
+					<td>10M</td>
+					<td>20M</td>
+					<td>50M</td>
+					<td>10M</td>
+					<td>80M</td>
+					<td>100M</td>
+					<td>120M</td>
+				</tr>
+				<tr>
+					<td>One Piece</td>
+					<td>X</td>
+					<td>X</td>
+					<td>15M</td>
+					<td>10M</td>
+					<td>20M</td>
+					<td>50M</td>
+					<td>30M</td>
+					<td>40M</td>
+					<td>70M</td>
+					<td>90M</td>
+					<td>100M</td>
+					<td>80M</td>
+				</tr>
+				<tr>
+					<td>Haikyuuu</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>30M</td>
+					<td>50M</td>
+					<td>80M</td>
+					<td>100M</td>
+					<td>120M</td>
+					<td>150M</td>
+				</tr>
+				<tr>
+					<td>Food Wars</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>10M</td>
+					<td>60M</td>
+					<td>80M</td>
+					<td>50M</td>
+					<td>100M</td>
+					<td>90M</td>
+					<td>120M</td>
+					<td>155M</td>
+				</tr>
+				<tr>
+					<td>Ao Ashi</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>30M</td>
+					<td>50M</td>
+					<td>70M</td>
+					<td>60M</td>
+					<td>50M</td>
+					<td>80M</td>
+					<td>100M</td>
+					<td>250M</td>
+					<td>200M</td>
+				</tr>
+				<tr>
+					<td>Haikyuuu</td>
+					<td>X</td>
+					<td>30M</td>
+					<td>40M</td>
+					<td>10M</td>
+					<td>15M</td>
+					<td>100M</td>
+					<td>70M</td>
+					<td>50M</td>
+					<td>80M</td>
+					<td>100M</td>
+					<td>190M</td>
+					<td>120M</td>
+				</tr>
+				<tr>
+					<td>Jujutsu Kaisen</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>50M</td>
+					<td>100M</td>
+				</tr>
+			</table> <br>
+			<p class="Nostros2"> Como ven se puede observar un gran aumento en el registro de nuevos usuarios de algunos de nuestros juegos con el paso de los años y estas estadisticas
+				son las que nos motivan cada dia para seguir trayendo juegos para seguir animando y divirtiendo a las personas.
+			</p> <br> <hr>
+			</div><br>
 			</section>
 		  </main>
 		  <hr class="my-6">
@@ -83,4 +238,5 @@
     <p>Copyright © 2023 | Todos los derechos reservados</p>
   </div>
 </footer>
-@endsection('header')
+<link rel="stylesheet" href="{{asset('css/us.css')}}">
+@endsection
