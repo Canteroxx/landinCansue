@@ -30,20 +30,20 @@
               <h1 class="text-3xl text-white my-6">Mas juegos del género:</h1>
               <div class="grid gap-6 lg:grid-cols-3 h-[200px]">
                 <div
-                  id="op-card"
-                  class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
+                  id="jk-card"
+                  class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer text-black"
                   data-te-ripple-init
                   data-te-ripple-color="dark"
                 >
                   <img
-                    src="{{asset('img/op/horizontal.jpeg')}}"
+                    src="{{asset('img/jk/horizontal.png')}}"
                     class="w-full align-middle transition duration-300 ease-linear"
                   />
                     <div
                       class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
                     >
                       <div class="flex h-full items-end justify-start">
-                        <h5 class="m-6 text-lg font-bold text-white">One Piece</h5>
+                        <h5 class="m-6 text-lg font-bold text-white">Jujutsu Kaisen</h5>
                       </div>
                     </div>
                     <div>
@@ -53,8 +53,8 @@
                     </div>
                 </div>
                 <div
-                  id="ao-card"
-                  class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
+                  id="tssdk-card"
+                  class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer text-black"
                   data-te-ripple-init
                   data-te-ripple-color="dark"
                 >
@@ -75,7 +75,6 @@
                       ></div>
                     </div>
                 </div>
-      
                 <div
                   id="sl-card"
                   class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
@@ -123,14 +122,11 @@
                   <input type="name" name="username" value="{{auth()->user()->username}}" class="text-black p-2 mb-2" required> 
                   Comentario:
                   <textarea name="comment" id="" cols="50" rows="2" class="text-black p-2 mb-2" required></textarea>
-                  @else
-                  Nombre:
-                  <input type="name" name="username" class="text-black p-2 mb-2" required>
-                  Comentario:
-                  <textarea name="comment" id="" cols="50" rows="5" class="text-black p-2 mb-2"required required oninput="limitWords(this, 10 0)"></textarea>
-                  @endauth
                   <input type="hidden" name="game" value="OnePiece">
                   <input type="submit" value="Enviar" class="p-1 bg-blue-900 hover:cursor-pointer">
+                  @else
+                  <p>Debes <a href="{{url('/login')}}">Iniciar Sesion</a> para poder comentar</p>
+                  @endauth
                   <div>
                   </div>
               </form>

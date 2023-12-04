@@ -1,11 +1,10 @@
 body{
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 320px;
   width: 100%;
   align-items: center;
 }
-
 h4, h2, small, a{
   margin: 0;
   padding: 0;
@@ -15,7 +14,7 @@ a{
 }
 .carousel{
   width: 100%;
-  margin: 0px 0px;
+  margin: 100px 0px;
 }
 .carousel h2{
   font-size: 45px;
@@ -35,7 +34,7 @@ a{
   width: fit-content;
   height: 504px;
   padding: 10px 0px;
-  margin: 0px auto;
+  margin: 100px auto;
   max-width: 90vw;
   overflow: hidden;
 }

@@ -125,14 +125,11 @@ Yuji Itadori, quien tiene una increíble fuerza física, pero no tiene ningún i
                   <input type="name" name="username" value="{{auth()->user()->username}}" class="text-black p-2 mb-2" required> 
                   Comentario:
                   <textarea name="comment" id="" cols="50" rows="2" class="text-black p-2 mb-2" required></textarea>
-                  @else
-                  Nombre:
-                  <input type="name" name="username" class="text-black p-2 mb-2" required>
-                  Comentario:
-                  <textarea name="comment" id="" cols="50" rows="5" class="text-black p-2 mb-2"required required oninput="limitWords(this, 10 0)"></textarea>
-                  @endauth
                   <input type="hidden" name="game" value="JujutsuKaisen">
                   <input type="submit" value="Enviar" class="p-1 bg-blue-900 hover:cursor-pointer">
+                  @else
+                  <p>Debes <a href="{{url('/login')}}">Iniciar Sesion</a> para poder comentar</p>
+                  @endauth
                   <div>
                   </div>
               </form>

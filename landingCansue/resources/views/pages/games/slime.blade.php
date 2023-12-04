@@ -30,7 +30,7 @@
               <h1 class="text-3xl text-white my-6">Mas juegos del género:</h1>
               <div class="grid gap-6 lg:grid-cols-3 h-[200px]">
                 <div
-                  id="bl-card"
+                  id="tny-card"
                   class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
                   data-te-ripple-init
                   data-te-ripple-color="dark"
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div
-                  id="hk-card"
+                  id="sl-card"
                   class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
                   data-te-ripple-init
                   data-te-ripple-color="dark"
@@ -77,7 +77,7 @@
                 </div>
   
                 <div
-                  id="knb-card"
+                  id="ol-card"
                   class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
                   data-te-ripple-init
                   data-te-ripple-color="dark"
@@ -123,14 +123,12 @@
                   <input type="name" name="username" value="{{auth()->user()->username}}" class="text-black p-2 mb-2" required> 
                   Comentario:
                   <textarea name="comment" id="" cols="50" rows="2" class="text-black p-2 mb-2" required></textarea>
-                  @else
-                  Nombre:
-                  <input type="name" name="username" class="text-black p-2 mb-2" required>
-                  Comentario:
-                  <textarea name="comment" id="" cols="50" rows="5" class="text-black p-2 mb-2"required required oninput="limitWords(this, 10 0)"></textarea>
-                  @endauth
                   <input type="hidden" name="game" value="Slime">
                   <input type="submit" value="Enviar" class="p-1 bg-blue-900 hover:cursor-pointer">
+                  @else
+                  <p>Debes <a href="{{url('/login')}}">Iniciar Sesion</a> para poder comentar</p>
+                  @endauth
+
                   <div>
                   </div>
               </form>
@@ -158,4 +156,5 @@
       </section>  
     </main>
   <link rel="stylesheet" href="{{asset('css/comentarios.css')}}">
+  <script src="{{ asset('js/index.js')}}"></script>
 @endsection('header')

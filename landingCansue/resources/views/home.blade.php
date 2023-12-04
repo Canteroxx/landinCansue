@@ -40,7 +40,7 @@
           <h1 class="text-3xl text-white my-2">Nuestros productos mas vendidos:</h1>
           <div class="grid gap-6 lg:grid-cols-3 h-[200px]">
             <div
-              id="op-card"
+              id="mop-card"
               class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
               data-te-ripple-init
               data-te-ripple-color="dark"
@@ -64,7 +64,7 @@
             </div>
   
             <div
-              id="ao-card"
+              id="mao-card"
               class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
               data-te-ripple-init
               data-te-ripple-color="dark"
@@ -88,7 +88,7 @@
             </div>
   
             <div
-              id="sl-card"
+              id="msl-card"
               class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg hover:cursor-pointer"
               data-te-ripple-init
               data-te-ripple-color="dark"

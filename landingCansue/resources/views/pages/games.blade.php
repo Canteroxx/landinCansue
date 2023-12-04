@@ -1,8 +1,40 @@
 @extends('header')
 @section('header')
-<main class="overflow-x-hidden m-20">
-        <h1 class="text-4xl text-white text-center mb-4">Nuestros Juegos</h1>
-        <div class="carousel">
+<main class="main2 overflow-x-hidden snap-y snap-mandatory relative h-screen overflow-y-auto overflow-x-hidden scroll-smooth text-slate-300 ">
+    <section class="snap-center h-screen">
+    <div
+          class="relative overflow-hidden bg-cover bg-no-repeat"
+          style="
+            background-position: 50%;
+            background-image: url('{{asset('img/fondo2.png')}}');
+            height: 800px;
+          "
+        >
+          <div
+            class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed"
+          >
+            <div class="flex h-full items-center justify-center">
+              <div class="px-6 text-center text-white md:px-12">
+                <h1
+                  class="mt-2 mb-16 text-5xl font-extralight tracking-wide md:text-6xl xl:text-7xl"
+                >
+                 Nuestros<br/><span>Juegos</span>
+                </h1>
+                <a
+                  class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out
+                  hover:border-neutral-100 hover:bg-neutral-100 hover:text-slate-800"
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  href="#carousel"
+                >
+                  Ver Juegos
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+        <section class="carousel snap-center h-screen pt-10" id="carousel">
             <div class="carrusel-list" id="carrusel-list">
                 <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
@@ -129,7 +161,7 @@
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
                 </button>
             </div>
-          </div>
+        </section>
       </main>
     <link rel="stylesheet" href="{{asset('css/gamess.css')}}">
     <hr class="my-6">
