@@ -1,16 +1,22 @@
-const form = document.getElementById("msg-form");
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("msg-form");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const nombre = document.getElementById("msg-name").value;
-  const email = document.getElementById("msg-email").value;
-  const mensaje = document.getElementById("msg-msg").value;
+  form.addEventListener("submit", function (e) {
+    const confirmacion = confirm("¿Estás seguro de enviar el formulario?");
 
-  mostrarDatos(nombre, email, mensaje);
+    if (confirmacion) {
+      const nombre = document.getElementById("msg-name").value;
+      const email = document.getElementById("msg-email").value;
+      const mensaje = document.getElementById("msg-msg").value;
+
+      mostrarDatos(nombre, email, mensaje);
+      console.log("Datos enviados al servidor");
+    } else {
+      e.preventDefault();
+    }
+  });
+
+  function mostrarDatos(nombre, email, mensaje) {
+    alert(`Mensaje enviado!\nNombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`);
+  }
 });
-
-function mostrarDatos(nombre, email, mensaje) {
-  alert(
-    `Mensaje enviado!\nNombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`
-  );
-}

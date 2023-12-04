@@ -38,7 +38,6 @@
             'games/SoloLeveling'
         );
     });
-
     closeModal.addEventListener('click', function() {
         modal.classList.add('hidden');
     });

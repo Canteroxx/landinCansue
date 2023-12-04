@@ -22,28 +22,8 @@
             </p>
         </div>
         </div>
-      </section>      
+      </section>
       <section class="snap-center h-screen">
-        <div class="h-screen pl-20 flex flex-row">
-            <article class="flex flex-col ml-10 gap-10">
-              <h1 class="text-3xl pt-20">Comentarios</h1>
-              <form action="">
-                <section id="contact">
-                  @auth
-                  <div name>
-                    <label for=""></label>
-                    <input type="text">
-                  </div>
-                  @endauth
-                  <div>
-
-                  </div>
-                </section>
-              </form>
-            </article>
-        </div>
-      </section>      
-      <section class="snap-center h-[80vh]">
         <div class="h-screen p-40 flex flex-row">
           <div class="container mx-auto md:px-6">
             <section class="">
@@ -79,14 +59,14 @@
                   data-te-ripple-color="dark"
                 >
                   <img
-                    src="{{asset('img/ao/horizontal.webp')}}"
+                    src="{{asset('img/tssdk/horizontal.jpg')}}"
                     class="w-full align-middle transition duration-300 ease-linear"
                   />
                     <div
                       class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
                     >
                       <div class="flex h-full items-end justify-start">
-                        <h5 class="m-6 text-lg font-bold text-white">Ao Ashi</h5>
+                        <h5 class="m-6 text-lg font-bold text-white">Tensei Shitara Slime Datta Ken</h5>
                       </div>
                     </div>
                     <div>
@@ -131,6 +111,52 @@
             </section>
           </div>
         </div>
+      </section>      
+      <section class="snap-center h-screen w-screen flex">
+        <div class="h-screen pl-40 flex flex-row pr-20">
+            <div class="flex flex-col ml-10 gap-10">
+              <h1 class="text-3xl pt-20">Agregar Comentario</h1>
+              <form action="/games/OnePiece" method="POST" class="flex flex-col text-white pb-2">
+                  @csrf
+                  @auth
+                  Nombre:
+                  <input type="name" name="username" value="{{auth()->user()->username}}" class="text-black p-2 mb-2" required> 
+                  Comentario:
+                  <textarea name="comment" id="" cols="50" rows="2" class="text-black p-2 mb-2" required></textarea>
+                  @else
+                  Nombre:
+                  <input type="name" name="username" class="text-black p-2 mb-2" required>
+                  Comentario:
+                  <textarea name="comment" id="" cols="50" rows="5" class="text-black p-2 mb-2"required required oninput="limitWords(this, 10 0)"></textarea>
+                  @endauth
+                  <input type="hidden" name="game" value="OnePiece">
+                  <input type="submit" value="Enviar" class="p-1 bg-blue-900 hover:cursor-pointer">
+                  <div>
+                  </div>
+              </form>
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-3xl pt-20 pl-20">Comentarios</h1>
+              @foreach($comentarios as $item)
+                <div class="flexbox flex flex-col gap-4">              
+                  <div class="card grow shrink-0 flex flex-row items-center text-black p-5 bg-white rounded-lg mb-5">
+                      <img id="ImagenUsuario" src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Imagen del usuario" class="h-14 w-14 mr-4"> 
+                      <div class="flex flex-col">
+                          <p>{{$item->username}}</p>
+                          <p>{{$item->comment}}</p>
+                      </div>
+                      <i class="fa-sharp fa-solid fa-x" style="color: #ff0000;"></i>
+                  </div>
+                </div>
+              @endforeach
+          </div>
+          <div>
+          </div>
+        </div>
       </section>
+      <section class="snap-center h-screen w-screen flex">
+      </section>      
     </main>
-@endsection('header')
+  <link rel="stylesheet" href="{{asset('css/comentarios.css')}}">
+    <script src="{{ asset('js/index.js')}}"></script>
+@endsection

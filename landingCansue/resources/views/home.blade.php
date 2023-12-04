@@ -70,7 +70,7 @@
               data-te-ripple-color="dark"
             >
               <img
-                src="{{asset('img/ao/horizontal.webp')}}"
+                src="{{asset('img/ao/horizontal.png')}}"
                 class="w-full align-middle transition duration-300 ease-linear"
               />
                 <div
